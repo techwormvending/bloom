@@ -53,6 +53,18 @@
             letter-spacing: -0.5px;
         }
 
+        .logo-image {
+            height: 80px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .side-logo-image {
+            height: 700px;
+            width: auto;
+            object-fit: contain;
+        }
+
         nav ul {
             list-style: none;
             display: flex;
@@ -124,6 +136,13 @@
             font-size: 1.4rem;
             margin-bottom: 2rem;
             opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .hero-tagline {
+            font-size: 1.1rem;
+            margin: 1rem 0 2rem 0;
+            opacity: 0.9;
             font-weight: 300;
         }
 
@@ -228,6 +247,146 @@
 
         .organic-badge strong {
             color: var(--primary);
+        }
+
+        /* Local Suppliers Section */
+        .local-suppliers {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--light) 0%, white 100%);
+        }
+
+        .local-suppliers-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .local-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .local-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--primary);
+        }
+
+        .local-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .local-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .local-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        .local-card p {
+            color: var(--gray);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .local-message {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--dark);
+            margin-top: 3rem;
+            padding: 2rem;
+            background: var(--accent-light);
+            border-radius: 12px;
+            line-height: 1.8;
+            font-weight: 500;
+        }
+
+        /* Smart Logistics Section */
+        .smart-logistics {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--light) 0%, white 100%);
+        }
+
+        .logistics-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logistics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .logistics-card {
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+
+        .logistics-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+
+        .logistics-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .logistics-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .logistics-card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+        .logistics-message {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: white;
+            border-left: 4px solid var(--accent);
+            border-radius: 12px;
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--dark);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .logistics-message p {
+            margin: 0;
         }
 
         .about-image {
@@ -508,7 +667,266 @@
             }
         }
 
-        /* Responsive */
+        /* Gallery Sections */
+        .gallery-section {
+            padding: 6rem 2rem;
+            background: white;
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-item h3 {
+            font-size: 1.1rem;
+            padding: 1rem;
+            color: var(--primary);
+            margin: 0;
+        }
+
+        .gallery-item p {
+            padding: 0 1rem 1rem;
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        /* Machine Section */
+        .machine-section {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--light) 0%, white 100%);
+        }
+
+        .machine-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .machine-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .machine-photo {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .machine-photo:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+        }
+
+        .machine-photo-image {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .machine-photo p {
+            padding: 1.5rem;
+            text-align: center;
+            color: var(--dark);
+            font-weight: 600;
+            margin: 0;
+            background: white;
+        }
+
+        /* Fresh Food Section */
+        .fresh-food-section {
+            padding: 6rem 2rem;
+            background: white;
+        }
+
+        .fresh-food-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .fresh-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .fresh-item {
+            text-align: center;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .fresh-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .fresh-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .fresh-item h3 {
+            padding: 1.5rem;
+            color: var(--primary);
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        /* Kitchen Section */
+        .kitchen-section {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--light) 0%, white 100%);
+        }
+
+        .kitchen-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .kitchen-photos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .kitchen-photo {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .kitchen-photo:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+        }
+
+        .kitchen-photo-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .kitchen-photo p {
+            padding: 1.5rem;
+            text-align: center;
+            color: var(--dark);
+            font-weight: 600;
+            margin: 0;
+            background: white;
+        }
+
+        /* Testimonials Section */
+        .testimonials-section {
+            padding: 6rem 2rem;
+            background: white;
+        }
+
+        .testimonials-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--primary);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .testimonial-photo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .testimonial-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .testimonial-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        /* Responsive Gallery */
+        @media (max-width: 1024px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .fresh-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .local-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
         @media (max-width: 768px) {
             nav ul {
                 gap: 1.5rem;
@@ -541,6 +959,34 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
+            .local-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .logistics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .machine-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .fresh-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .kitchen-photos {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
             .benefits-list {
                 grid-template-columns: 1fr;
                 gap: 2rem;
@@ -558,18 +1004,22 @@
             .section-title {
                 font-size: 2rem;
             }
+
+            .local-message {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav>
-        <div class="logo">Bloom</div>
+        <img src="uploads/logo.jpg" alt="Bloom Logo" class="logo-image">
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#features">Why Bloom</a></li>
             <li><a href="#products">Products</a></li>
-            <li><a href="#contact" class="cta-nav">Partner With Us</a></li>
+            <li><a href="partnership-form.html" class="cta-nav">Partner With Us</a></li>
         </ul>
     </nav>
 
@@ -578,7 +1028,8 @@
         <div class="hero-content">
             <h1>Fresh Delivered Daily</h1>
             <p class="hero-subtitle">Premium fresh food supplied the same day for your vending locations. Quality you can trust.</p>
-            <a href="#contact" class="hero-cta">Start a Partnership</a>
+            <p class="hero-tagline">Powered by AI-driven logistics to keep your products fresh and your machines optimized.</p>
+            <a href="partnership-form.html" class="hero-cta">Start a Partnership</a>
         </div>
     </section>
 
@@ -609,13 +1060,48 @@
                 
                 <p>Our focus is simple: source products your customers want, deliver them fresh the same day, and make restocking effortless for location managers.</p>
 
+                <p>We work with AI-powered vending systems to optimize logistics and inventory management. This means your products stay fresher longer, waste is minimized, and your machines are always stocked with what sells. It's the perfect pairing: premium fresh food + intelligent vending technology.</p>
+
                 <p>Everything we supply is fresh. We emphasize organic and natural products where quality and pricing make sense, but we're honest about what we offer—premium selection without the premium price tag on everything.</p>
 
                 <div class="organic-badge">
                     <strong>80%+ of our products</strong> are organic or sourced from natural suppliers. The remaining 20% are carefully curated premium items that deliver exceptional value.
                 </div>
             </div>
-            <div class="about-image">🥬</div>
+            <img src="uploads/logo.jpg" alt="Logo" class="side-logo-image">
+        </div>
+    </section>
+
+    <!-- Local Suppliers Section -->
+    <section class="local-suppliers">
+        <div class="local-suppliers-container">
+            <h2 class="section-title">Supporting Local</h2>
+            <p class="section-subtitle">We partner with Pittsburgh-area suppliers and local producers to bring the freshest, highest-quality food to your machines.</p>
+            
+            <div class="local-grid">
+                <div class="local-card">
+                    <div class="local-icon">🌾</div>
+                    <h3>Local Farms</h3>
+                    <p>Direct relationships with regional farms for fresh produce and seasonal ingredients.</p>
+                </div>
+                <div class="local-card">
+                    <div class="local-icon">🥖</div>
+                    <h3>Local Bakeries</h3>
+                    <p>Partnership with Pittsburgh bakeries for fresh-baked bread delivered daily.</p>
+                </div>
+                <div class="local-card">
+                    <div class="local-icon">🲒</div>
+                    <h3>Local Producers</h3>
+                    <p>Supporting regional food makers and artisan producers in our community.</p>
+                </div>
+                <div class="local-card">
+                    <div class="local-icon">🤝</div>
+                    <h3>Community First</h3>
+                    <p>When we buy local, we strengthen Pittsburgh's food economy and support small businesses.</p>
+                </div>
+            </div>
+
+            <p class="local-message">By choosing Bloom, your customers aren't just getting fresh food—they're supporting local Pittsburgh businesses and producers. That's something to feel good about.</p>
         </div>
     </section>
 
@@ -645,6 +1131,41 @@
         </div>
     </section>
 
+    <!-- Smart Logistics Section -->
+    <section class="smart-logistics">
+        <div class="logistics-container">
+            <h2 class="section-title">AI-Powered Freshness</h2>
+            <p class="section-subtitle">We partner with intelligent vending systems to optimize every step of the process.</p>
+
+            <div class="logistics-grid">
+                <div class="logistics-card">
+                    <div class="logistics-number">1</div>
+                    <h3>Real-Time Inventory</h3>
+                    <p>AI vendors track what's selling in real-time, so we know exactly what to deliver and when. No guessing, no waste.</p>
+                </div>
+                <div class="logistics-card">
+                    <div class="logistics-number">2</div>
+                    <h3>Smart Restocking</h3>
+                    <p>Optimized delivery routes and timing mean fresher products arrive when you need them, not when the supplier wants.</p>
+                </div>
+                <div class="logistics-card">
+                    <div class="logistics-number">3</div>
+                    <h3>Reduced Waste</h3>
+                    <p>Intelligent data means less product waste. What doesn't sell gets redirected—better margins for everyone.</p>
+                </div>
+                <div class="logistics-card">
+                    <div class="logistics-number">4</div>
+                    <h3>Temperature Control</h3>
+                    <p>AI vendors monitor machine conditions. We deliver the right products for the right environment every time.</p>
+                </div>
+            </div>
+
+            <div class="logistics-message">
+                <p><strong>The result:</strong> Fresher food, less waste, happier customers, and better profits. This is what smart vending and premium sourcing look like when they work together.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Products Section -->
     <section class="products" id="products">
         <div class="products-container">
@@ -663,7 +1184,7 @@
                     <p>Pre-made or fresh-built options using quality bread and local ingredients.</p>
                 </div>
                 <div class="product-category">
-                    <div class="product-emoji">🍎</div>
+                    <div class="product-emoji">🎎</div>
                     <h3>Fruit & Snacks</h3>
                     <p>Fresh fruit cups, organic snack packs, and healthy grab-and-go options.</p>
                 </div>
@@ -671,6 +1192,109 @@
                     <div class="product-emoji">🥤</div>
                     <h3>Beverages</h3>
                     <p>Fresh juices, plant-based options, and premium beverage selections.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Machine Photos Section -->
+    <section class="machine-section">
+        <div class="machine-container">
+            <h2 class="section-title">Bloom in Your Machines</h2>
+            <p class="section-subtitle">See how our fresh food looks stocked in vending locations.</p>
+            <div class="machine-gallery">
+                <div class="machine-photo">
+                    <img src="uploads/machine.jpg" alt="Machine Stocked & Ready" class="machine-photo-image">
+                    <p>Machine Stocked & Ready</p>
+                </div>
+                <div class="machine-photo">
+                    <img src="uploads/drinks.jpg" alt="Fresh Beverage Selection" class="machine-photo-image">
+                    <p>Fresh Beverage Selection</p>
+                </div>
+                <div class="machine-photo">
+                    <img src="uploads/prem.jpg" alt="Premium Display" class="machine-photo-image">
+                    <p>Premium Display</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fresh Food Gallery -->
+    <section class="fresh-food-section">
+        <div class="fresh-food-container">
+            <h2 class="section-title">Always Fresh</h2>
+            <p class="section-subtitle">Every item is selected for quality and delivered the same day.</p>
+            <div class="fresh-grid">
+                <div class="fresh-item">
+                    <img src="uploads/veggie.jpg" alt="Organic Produce" class="fresh-image">
+                    <h3>Organic Produce</h3>
+                </div>
+                <div class="fresh-item">
+                    <img src="uploads/stock.jpg" alt="Prepared Foods" class="fresh-image">
+                    <h3>Prepared Foods</h3>
+                </div>
+                <div class="fresh-item">
+                    <img src="uploads/food.jpg" alt="Healthy Options" class="fresh-image">
+                    <h3>Healthy Options</h3>
+                </div>
+                <div class="fresh-item">
+                    <img src="uploads/drinks.jpg" alt="Quality Beverages" class="fresh-image">
+                    <h3>Quality Beverages</h3>
+                </div>
+                <div class="fresh-item">
+                    <img src="uploads/inspect.jpg" alt="Daily Prep" class="fresh-image">
+                    <h3>Daily Prep</h3>
+                </div>
+                <div class="fresh-item">
+                    <img src="uploads/car.jpg" alt="Same-Day Delivery" class="fresh-image">
+                    <h3>Same-Day Delivery</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kitchen & Team Section -->
+    <section class="kitchen-section">
+        <div class="kitchen-container">
+            <h2 class="section-title">Behind the Scenes</h2>
+            <p class="section-subtitle">Meet the team that prepares every item with care.</p>
+            <div class="kitchen-photos">
+                <div class="kitchen-photo">
+                    <img src="uploads/kitchen-empty.jpg" alt="Our Kitchen" class="kitchen-photo-image">
+                    <p>Our Kitchen</p>
+                </div>
+                <div class="kitchen-photo">
+                    <img src="uploads/working_in_the_kitchen.jpg" alt="Team at Work" class="kitchen-photo-image">
+                    <p>Team at Work</p>
+                </div>
+                <div class="kitchen-photo">
+                    <img src="uploads/stock.jpg" alt="Quality Preparation" class="kitchen-photo-image">
+                    <p>Quality Preparation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Happy Customers Section -->
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+            <h2 class="section-title">Our People Love Bloom</h2>
+            <p class="section-subtitle">Operators and customers trust us for quality and freshness.</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <img src="uploads/logo.jpg" alt="Techworm Vending" class="testimonial-photo">
+                    <h3>Techworm Vending</h3>
+                    <p>"Bloom keeps my machines fully stocked and my customers happy."</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="uploads/prem.jpg" alt="ID Labs" class="testimonial-photo">
+                    <h3>ID Labs</h3>
+                    <p>"Same-day delivery means we always have fresh options available."</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="uploads/drinks.jpg" alt="Gym Owner" class="testimonial-photo">
+                    <h3>Gym Owner</h3>
+                    <p>"Members love the quality of food and the healthy choices."</p>
                 </div>
             </div>
         </div>
@@ -734,22 +1358,15 @@
         <h2>Ready to Partner?</h2>
         <p>Join operators across Pittsburgh who trust Bloom to keep their locations stocked with fresh, quality food that customers love.</p>
         <div class="cta-buttons">
-            <a href="mailto:partnerships@bloombreach.com" class="btn-primary">Get Started</a>
-            <a href="tel:4127799809" class="btn-secondary">Call Us</a>
+            <a href="partnership-form.html" class="btn-primary">Get Started</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p><strong>Bloom</strong> — Fresh Food Supply for Vending Locations</p>
+        <p><strong>Bloom</strong> – Fresh Food Supply for Vending Locations</p>
         <div class="footer-links">
-            <a href="mailto:partnerships@bloombreach.com">partnerships@bloombreach.com</a>
-            <a href="tel:4127799809">(412) 779-9809</a>
+            <a href="/cdn-cgi/l/email-protection#751c1b131a3517191a1a18130710061d131a1a115b1a0712"><span class="__cf_email__" data-cfemail="4920272f26092b252626242f3b2c3a212f26262d67263b2e">[email&#160;protected]</span></a>
         </div>
         <div class="footer-contact">
-            <p>Pittsburgh, PA | Same-Day Fresh Delivery</p>
-            <p style="margin-top: 1rem; opacity: 0.7;">© 2025 Bloom. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+           
